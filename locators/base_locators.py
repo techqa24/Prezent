@@ -5,7 +5,7 @@ class BaseLocators:
 class TemplatesLocators(BaseLocators):
     TEMPLATES_TAB = "#templates-tab"
     TEMPLATE_TITLES = "div.v-card__title.cardTitleForViewer"
-    CURRENT_SELECTION = "//span[@class='v-btn__content'][contains(text(), 'Current selection')]"
+    CURRENT_SELECTION = "//div[@class='v-card__title cardTitleForViewer'][1]"
     BASICS_TAB = "#basics-tab"
 class HomePageLocators(BaseLocators):
     AUTO_GENERATOR = "//div[text()='Auto Generator ']"

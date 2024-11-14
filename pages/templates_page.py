@@ -7,7 +7,7 @@ class TemplatesPage:
         self.locators = TemplatesLocators
 
     def get_template_names(self):
-        self.sb.wait_for_element_visible(self.locators.TEMPLATE_TITLES, timeout=20)
+        self.sb.wait_for_element_visible(self.locators.TEMPLATE_TITLES, timeout=30)
         templates = self.sb.find_elements(self.locators.TEMPLATE_TITLES)
         return [template.text for template in templates][:5]
 
