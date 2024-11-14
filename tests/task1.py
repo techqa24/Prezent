@@ -1,5 +1,4 @@
 from seleniumbase import BaseCase
-from locators.base_locators import TemplatesLocators
 from pages.templates_page import TemplatesPage
 from utils.helper import login,logout
 

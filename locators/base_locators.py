@@ -1,11 +1,10 @@
 class BaseLocators:
-    """Base class containing common locators across pages"""
     PROFILE_ICON = "//div[@name='profile-icon']"
     SIGN_OUT = "//span[text()=' Sign Out ']"
 
 class TemplatesLocators(BaseLocators):
-    TEMPLATES_TAB = "#templates-tab"  # Using CSS if possible for better performance
-    TEMPLATE_TITLES = "div.v-card__title.cardTitleForViewer"  # CSS selector
+    TEMPLATES_TAB = "#templates-tab"
+    TEMPLATE_TITLES = "div.v-card__title.cardTitleForViewer"
     CURRENT_SELECTION = "//span[@class='v-btn__content'][contains(text(), 'Current selection')]"
     BASICS_TAB = "#basics-tab"
 class HomePageLocators(BaseLocators):

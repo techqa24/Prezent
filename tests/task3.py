@@ -9,3 +9,5 @@ class Task2(BaseCase):
         login(self)
         home_page = HomePage(self)
         home_page.generate_prompt()
+        navigate_to_profile(self)
+        logout(self)
